@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/settings_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_gravity="center" />
+
+        <!-- Switches for showing/hiding fields -->
+        <Switch
+            android:id="@+id/switch_show_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Address" />
+
+        <Switch
+            android:id="@+id/switch_show_used_num_gas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Used Gas" />
+
+        <Switch
+            android:id="@+id/switch_show_gas_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Gas Level Type" />
+
+        <Switch
+            android:id="@+id/switch_show_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Price" />
+
+        <!-- Music switch -->
+        <Switch
+            android:id="@+id/switch_play_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play Music" />
+
+        <!-- Optional: Button to save settings -->
+        <Button
+            android:id="@+id/button_save_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Settings"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

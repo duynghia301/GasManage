@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewCustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên Khách Hàng"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewCustomerAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa Chỉ"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewUsedNumGas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số Lượng Gas Đã Sử Dụng"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewGasLevelType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loại Mức Gas"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa Thông Tin" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xóa Khách Hàng"
+        android:backgroundTint="@android:color/holo_red_light" />
+
+</LinearLayout>

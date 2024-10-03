@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/price_update_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Gas Price"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/edit_gas_increase_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Increase Amount" />
+
+    <Button
+        android:id="@+id/button_update_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Price"
+        android:layout_gravity="center" />
+</LinearLayout>
