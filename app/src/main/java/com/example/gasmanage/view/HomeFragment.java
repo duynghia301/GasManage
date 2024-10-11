@@ -27,8 +27,7 @@ public class HomeFragment extends Fragment {
 
         // Sự kiện thêm khách hàng
         buttonAddCustomer.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), Customer.class);
-            startActivity(intent);
+
         });
 
         // Sự kiện xem danh sách khách hàng

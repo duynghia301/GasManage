@@ -1,45 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
-    <!-- Thanh điều hướng -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="?android:attr/colorPrimary"
-        android:padding="8dp">
-
-        <Button
-            android:id="@+id/button_home"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Home"
-            android:textColor="@android:color/white" />
-
-        <Button
-            android:id="@+id/button_search"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Search"
-            android:textColor="@android:color/white" />
-
-        <Button
-            android:id="@+id/button_settings"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Settings"
-            android:textColor="@android:color/white" />
-    </LinearLayout>
 
     <!-- Container để load các Fragment -->
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#B4FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/colorPrimary"
+        android:backgroundTint="#85DCF4"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/button_home"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_home" />
+
+        <ImageButton
+            android:id="@+id/button_customer"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_customer" />
+
+        <ImageButton
+            android:id="@+id/button_search"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_searchh" />
+
+        <ImageButton
+            android:id="@+id/button_schedule"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_task" />
+
+        <ImageButton
+            android:id="@+id/button_settings"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_setting" />
+
+    </LinearLayout>
 </LinearLayout>
